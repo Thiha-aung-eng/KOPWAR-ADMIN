@@ -1,10 +1,13 @@
-import './App.css';
-
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import MasterLayout from './layout/admin/MasterLayout';
 function App() {
   return (
-    <div className="App">
-      <h2> ASSSSSSSSSSSSSSSSSS </h2>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/admin/dashboard" element={<MasterLayout />}></Route>
+      </Routes>
+    </Router>
   );
 }
 
